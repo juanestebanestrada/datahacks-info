@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V-05: Wireframe Pipeline Algorítmico y Metodología — DataHacks</title>
+  <link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+
+  <!-- Barra de Control del Prototipo Académico -->
+  <aside class="wf-indicator-bar" aria-label="Controles del Prototipo">
+    <span>[PROTOTIPO WIREFRAME DATAHACKS] — <strong>V-05: Pipeline Algorítmico y Metodología</strong> (Diagrama de Flujo 4 Etapas)</span>
+    <span>Vistas interactivas: 
+      <a href="index.html">V-01: Inicio</a> | 
+      <a href="casos-estudio.html">V-02: Casos</a> | 
+      <a href="arquetipos-futbol-real-madrid.html">V-03: Detalle</a> | 
+      <a href="mundial.html">V-04: Mundial</a> | 
+      <a href="algoritmo.html" style="font-weight:bold;text-decoration:underline;">V-05: Algoritmo</a>
+    </span>
+  </aside>
+
+  <!-- Barra de Navegación Superior Persistente -->
+  <header class="wf-navbar">
+    <div class="wf-container">
+      <div class="wf-nav-inner">
+        <a href="index.html" class="wf-brand">
+          <span class="wf-brand-badge">LOGOTIPO [DATAHACKS]</span>
+        </a>
+        <nav aria-label="Menú principal">
+          <ul class="wf-nav-links">
+            <li><a href="index.html" class="wf-nav-link">Inicio / Blog</a></li>
+            <li><a href="casos-estudio.html" class="wf-nav-link">Casos de Estudio</a></li>
+            <li><a href="mundial.html" class="wf-nav-link">Mundial 2026</a></li>
+            <li><a href="algoritmo.html" class="wf-nav-link active">Pipeline Algorítmico</a></li>
+            <li><a href="arquetipos-futbol-real-madrid.html" class="wf-nav-link">Artículo Destacado</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="index.html" class="wf-btn wf-btn-secondary">← Volver al Inicio (V-01)</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cabecera Metodológica -->
+    <section style="padding: 40px 0 24px; background-color: var(--wf-surface); border-bottom: 1px solid var(--wf-border);">
+      <div class="wf-container">
+        <!-- Breadcrumbs -->
+        <div class="wf-breadcrumbs">
+          <a href="index.html">Inicio (V-01)</a>
+          <span>›</span>
+          <span style="color: var(--wf-text-title); font-weight: 600;">Metodología y Algoritmos (V-05)</span>
+        </div>
+
+        <span class="wf-badge wf-badge-interactive" style="margin-bottom: 8px;">Fundamentación Matemática & Arquitectura de Datos</span>
+        <h1 class="wf-h1">Pipeline Algorítmico y Metodología de Modelado</h1>
+        <p class="wf-lead" style="max-width: 860px; margin-bottom: 0;">
+          Esquema integral de las etapas computacionales aplicadas en DataHacks: desde la ingesta de telemetría y eventos brutos hasta la inferencia dimensional y validación matemática de clústeres.
+        </p>
+      </div>
+    </section>
+
+    <!-- Diagrama de Flujo Horizontal de 4 Etapas (Pipeline) -->
+    <section style="padding: 36px 0;">
+      <div class="wf-container">
+        <h2 class="wf-h2">Diagrama de Flujo del Pipeline (4 Etapas Consecutivas)</h2>
+        
+        <div class="wf-grid-4" style="position: relative;">
+          
+          <!-- Etapa 1 -->
+          <div class="wf-card" style="border-top: 4px solid var(--wf-accent);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="wf-badge" style="font-weight: 700;">FASE 01</span>
+              <span style="font-size: 11px; color: var(--wf-text-muted);">Ingesta</span>
+            </div>
+            <h3 class="wf-h3" style="font-size: 16px;">Preprocesamiento y Normalización</h3>
+            <p class="wf-body" style="font-size: 12px;">
+              Limpieza de valores nulos, filtrado por umbral de minutos jugados (&gt;600 min) y escalado estandarizado Z-Score para equiparar magnitudes.
+            </p>
+            <div style="background-color: var(--wf-canvas); padding: 8px; border-radius: 4px; font-family: var(--wf-font-mono); font-size: 11px; color: var(--wf-text-title);">
+              Z = (X - &mu;) / &sigma;
+            </div>
+          </div>
+
+          <!-- Etapa 2 -->
+          <div class="wf-card" style="border-top: 4px solid var(--wf-accent);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="wf-badge" style="font-weight: 700;">FASE 02</span>
+              <span style="font-size: 11px; color: var(--wf-text-muted);">Reducción</span>
+            </div>
+            <h3 class="wf-h3" style="font-size: 16px;">Análisis de Componentes Principales</h3>
+            <p class="wf-body" style="font-size: 12px;">
+              Descomposición en valores singulares (SVD) de la matriz de covarianza. Proyección ortogonal que preserva más del 70% de la varianza total.
+            </p>
+            <div style="background-color: var(--wf-canvas); padding: 8px; border-radius: 4px; font-family: var(--wf-font-mono); font-size: 11px; color: var(--wf-text-title);">
+              &Sigma; v = &lambda; v
+            </div>
+          </div>
+
+          <!-- Etapa 3 -->
+          <div class="wf-card" style="border-top: 4px solid var(--wf-accent);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="wf-badge" style="font-weight: 700;">FASE 03</span>
+              <span style="font-size: 11px; color: var(--wf-text-muted);">Clustering</span>
+            </div>
+            <h3 class="wf-h3" style="font-size: 16px;">Segmentación No Supervisada K-Means</h3>
+            <p class="wf-body" style="font-size: 12px;">
+              Optimización del número de agrupaciones mediante el Método del Codo y Coeficiente de Silueta. Convergencia por distancia euclidiana mínima.
+            </p>
+            <div style="background-color: var(--wf-canvas); padding: 8px; border-radius: 4px; font-family: var(--wf-font-mono); font-size: 11px; color: var(--wf-text-title);">
+              J = &sum; || x_i - &mu;_k ||&sup2;
+            </div>
+          </div>
+
+          <!-- Etapa 4 -->
+          <div class="wf-card" style="border-top: 4px solid var(--wf-accent);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span class="wf-badge" style="font-weight: 700;">FASE 04</span>
+              <span style="font-size: 11px; color: var(--wf-text-muted);">Validación</span>
+            </div>
+            <h3 class="wf-h3" style="font-size: 16px;">Evaluación & Despliegue en UI</h3>
+            <p class="wf-body" style="font-size: 12px;">
+              Cálculo de métricas Davies-Bouldin, interpretación funcional de centroides con expertos de dominio y serialización JSON para renderizado web.
+            </p>
+            <div style="background-color: var(--wf-canvas); padding: 8px; border-radius: 4px; font-family: var(--wf-font-mono); font-size: 11px; color: var(--wf-text-title);">
+              Silhouette Score &ge; 0.58
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Explicación Técnica y Placeholder del Método del Codo -->
+    <section style="padding: 16px 0 60px;">
+      <div class="wf-container">
+        
+        <div class="wf-grid-2">
+          
+          <!-- Bloque de Detalle Matemático -->
+          <div class="wf-card">
+            <h3 class="wf-h3">Determinación del Hiperparámetro k Óptimo</h3>
+            <p class="wf-body">
+              Para evitar el sobreajuste o la subsegmentación arbitraria, el pipeline ejecuta una búsqueda exhaustiva evaluando la inercia intra-clúster (Within-Cluster Sum of Squares, WCSS) frente al número de centroides candidatos k &isin; [2, 10].
+            </p>
+            <p class="wf-body">
+              El punto de inflexión del codo se contrasta rigurosamente con el Coeficiente de Silueta medio, seleccionando k=3 o k=4 según la familia posicional analizada (defensas, volantes o delanteros).
+            </p>
+            <div style="display: flex; gap: 12px; margin-top: 20px;">
+              <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-primary">Ver Aplicación en Caso Real Madrid (V-03) →</a>
+            </div>
+          </div>
+
+          <!-- Placeholder Gráfico del Método del Codo -->
+          <div class="wf-card">
+            <div class="wf-placeholder" style="min-height: 260px;">
+              <div class="wf-placeholder-icon">📈</div>
+              <div class="wf-placeholder-label">[Placeholder Gráfico: Curva WCSS & Silhouette vs k]</div>
+              <div class="wf-placeholder-dim">Dimensiones: 520 x 260 px | Codo visible en k=3</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Estructural -->
+  <footer class="wf-footer">
+    <div class="wf-container">
+      <div class="wf-footer-bottom">
+        <div>© DataHacks — Prototipo Wireframe Académico (Normas APA 7.ª Ed.)</div>
+        <div>Navegación de retorno: Clic en el botón superior o enlaces inferiores para ir a <strong>V-01</strong>, <strong>V-02</strong> o <strong>V-03</strong></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

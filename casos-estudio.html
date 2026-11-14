@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V-02: Wireframe Catálogo de Casos de Estudio — DataHacks</title>
+  <link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+
+  <!-- Barra de Control del Prototipo Académico -->
+  <aside class="wf-indicator-bar" aria-label="Controles del Prototipo">
+    <span>[PROTOTIPO WIREFRAME DATAHACKS] — <strong>V-02: Catálogo de Casos de Estudio</strong> (Patrón en F)</span>
+    <span>Vistas interactivas: 
+      <a href="index.html">V-01: Inicio</a> | 
+      <a href="casos-estudio.html" style="font-weight:bold;text-decoration:underline;">V-02: Casos</a> | 
+      <a href="arquetipos-futbol-real-madrid.html">V-03: Detalle</a> | 
+      <a href="mundial.html">V-04: Mundial</a> | 
+      <a href="algoritmo.html">V-05: Algoritmo</a>
+    </span>
+  </aside>
+
+  <!-- Barra de Navegación Superior Persistente -->
+  <header class="wf-navbar">
+    <div class="wf-container">
+      <div class="wf-nav-inner">
+        <a href="index.html" class="wf-brand">
+          <span class="wf-brand-badge">LOGOTIPO [DATAHACKS]</span>
+        </a>
+        <nav aria-label="Menú principal">
+          <ul class="wf-nav-links">
+            <li><a href="index.html" class="wf-nav-link">Inicio / Blog</a></li>
+            <li><a href="casos-estudio.html" class="wf-nav-link active">Casos de Estudio</a></li>
+            <li><a href="mundial.html" class="wf-nav-link">Mundial 2026</a></li>
+            <li><a href="algoritmo.html" class="wf-nav-link">Pipeline Algorítmico</a></li>
+            <li><a href="arquetipos-futbol-real-madrid.html" class="wf-nav-link">Artículo Destacado</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="index.html" class="wf-btn wf-btn-secondary">← Volver al Inicio</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cabecera de Catálogo -->
+    <section style="padding: 40px 0 24px; background-color: var(--wf-surface); border-bottom: 1px solid var(--wf-border);">
+      <div class="wf-container">
+        <!-- Breadcrumb -->
+        <div class="wf-breadcrumbs">
+          <a href="index.html">Inicio (V-01)</a>
+          <span>›</span>
+          <span style="color: var(--wf-text-title); font-weight: 600;">Casos de Estudio (V-02)</span>
+        </div>
+
+        <h1 class="wf-h1">Catálogo de Investigaciones y Casos de Estudio</h1>
+        <p class="wf-lead" style="margin-bottom: 24px;">
+          Exploración de proyectos cuantitativos basados en machine learning, inferencia causal y modelado predictivo aplicados a la toma de decisiones en entornos reales.
+        </p>
+
+        <!-- Barra de Filtros Interactiva (Affordance de Selección) -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; padding-top: 8px;">
+          <a href="casos-estudio.html" class="wf-btn wf-btn-primary" style="min-height: 36px; padding: 6px 14px; font-size: 13px;">Todos los Casos (5)</a>
+          <a href="casos-estudio.html" class="wf-btn wf-btn-neutral" style="min-height: 36px; padding: 6px 14px; font-size: 13px;">Deportes (xG & Clustering)</a>
+          <a href="casos-estudio.html" class="wf-btn wf-btn-neutral" style="min-height: 36px; padding: 6px 14px; font-size: 13px;">Telecomunicaciones (Churn)</a>
+          <a href="casos-estudio.html" class="wf-btn wf-btn-neutral" style="min-height: 36px; padding: 6px 14px; font-size: 13px;">Inmobiliario (Regresión Hedónica)</a>
+          <a href="casos-estudio.html" class="wf-btn wf-btn-neutral" style="min-height: 36px; padding: 6px 14px; font-size: 13px;">Seguridad Urbana (KDE)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listado Estructurado (Layout en F) -->
+    <section style="padding: 40px 0 60px;">
+      <div class="wf-container">
+        
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          
+          <!-- Caso 1: Deportes / Fútbol -->
+          <article class="wf-card" style="display: grid; grid-template-columns: 320px 1fr; gap: 28px; align-items: center;">
+            <div class="wf-placeholder" style="min-height: 180px;">
+              <div class="wf-placeholder-icon">⚽</div>
+              <div class="wf-placeholder-label">[Thumbnail: Radar de Métricas Posicionales]</div>
+              <div class="wf-placeholder-dim">320 x 180 px</div>
+            </div>
+            <div>
+              <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+                <span class="wf-badge wf-badge-interactive">Deportes & IA</span>
+                <span style="font-size: 12px; color: var(--wf-text-muted);">Lectura: 14 min | Google Colab Disponible</span>
+              </div>
+              <h2 class="wf-h2" style="font-size: 20px; margin-bottom: 8px;">
+                Identificación de Arquetipos de Rendimiento Deportivo: Real Madrid y Fútbol Europeo
+              </h2>
+              <p class="wf-body">
+                Pipeline de clustering K-Means combinado con PCA para descubrir patrones tácticos objetivos en plantillas de élite. Normalización Z-score, ponderación posicional y cálculo de métricas de peligro generado.
+              </p>
+              <div style="display: flex; gap: 16px; align-items: center; margin-top: 16px;">
+                <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-primary">Leer Caso Completo (V-03) →</a>
+                <a href="algoritmo.html" class="wf-btn wf-btn-secondary">Ver Metodología Algorítmica (V-05)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Caso 2: Telecomunicaciones -->
+          <article class="wf-card" style="display: grid; grid-template-columns: 320px 1fr; gap: 28px; align-items: center;">
+            <div class="wf-placeholder" style="min-height: 180px;">
+              <div class="wf-placeholder-icon">📶</div>
+              <div class="wf-placeholder-label">[Thumbnail: Curva de Precisión-Recall Telco]</div>
+              <div class="wf-placeholder-dim">320 x 180 px</div>
+            </div>
+            <div>
+              <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+                <span class="wf-badge">Telecomunicaciones</span>
+                <span style="font-size: 12px; color: var(--wf-text-muted);">Lectura: 18 min | Dataset Kaggle 7K Registros</span>
+              </div>
+              <h2 class="wf-h2" style="font-size: 20px; margin-bottom: 8px;">
+                Modelado Predictivo de Churn en Clientes de Telecomunicaciones: Comparación Multimodelo
+              </h2>
+              <p class="wf-body">
+                Diseño de un sistema de alerta temprana de baja de clientes mediante algoritmos de ensamble (XGBoost y LightGBM). Análisis de interpretabilidad con valores SHAP y matriz de costo-beneficio operacional.
+              </p>
+              <div style="display: flex; gap: 16px; align-items: center; margin-top: 16px;">
+                <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-primary">Leer Caso Completo (V-03) →</a>
+                <a href="index.html" class="wf-btn wf-btn-neutral">Ver Resumen Ejecutivo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Caso 3: Inmobiliario -->
+          <article class="wf-card" style="display: grid; grid-template-columns: 320px 1fr; gap: 28px; align-items: center;">
+            <div class="wf-placeholder" style="min-height: 180px;">
+              <div class="wf-placeholder-icon">🏠</div>
+              <div class="wf-placeholder-label">[Thumbnail: Heatmap de Precios por m²]</div>
+              <div class="wf-placeholder-dim">320 x 180 px</div>
+            </div>
+            <div>
+              <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+                <span class="wf-badge">Sector Inmobiliario</span>
+                <span style="font-size: 12px; color: var(--wf-text-muted);">Lectura: 16 min | Análisis Espacial GIS</span>
+              </div>
+              <h2 class="wf-h2" style="font-size: 20px; margin-bottom: 8px;">
+                Modelado Hedónico y Tasación Automatizada de Inmuebles Residenciales
+              </h2>
+              <p class="wf-body">
+                Estimación econométrica del valor del suelo y características físicas del inmueble. Inclusión de variables geoespaciales de accesibilidad a transporte masivo, parques y zonas comerciales.
+              </p>
+              <div style="display: flex; gap: 16px; align-items: center; margin-top: 16px;">
+                <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-primary">Leer Caso Completo (V-03) →</a>
+                <a href="index.html" class="wf-btn wf-btn-neutral">Ver Resumen Ejecutivo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Caso 4: Seguridad Urbana -->
+          <article class="wf-card" style="display: grid; grid-template-columns: 320px 1fr; gap: 28px; align-items: center;">
+            <div class="wf-placeholder" style="min-height: 180px;">
+              <div class="wf-placeholder-icon">📍</div>
+              <div class="wf-placeholder-label">[Thumbnail: Agrupamiento Espacial DBSCAN]</div>
+              <div class="wf-placeholder-dim">320 x 180 px</div>
+            </div>
+            <div>
+              <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+                <span class="wf-badge">Seguridad Urbana</span>
+                <span style="font-size: 12px; color: var(--wf-text-muted);">Lectura: 12 min | Open Data Medellín</span>
+              </div>
+              <h2 class="wf-h2" style="font-size: 20px; margin-bottom: 8px;">
+                Segmentación Espacio-Temporal de Incidentes de Convivencia Ciudadana
+              </h2>
+              <p class="wf-body">
+                Modelado no supervisado de patrones de concentración delictiva para la asignación óptima de recursos de patrullaje preventivo en cuadrantes policiales.
+              </p>
+              <div style="display: flex; gap: 16px; align-items: center; margin-top: 16px;">
+                <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-primary">Leer Caso Completo (V-03) →</a>
+                <a href="index.html" class="wf-btn wf-btn-neutral">Ver Resumen Ejecutivo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Estructural -->
+  <footer class="wf-footer">
+    <div class="wf-container">
+      <div class="wf-footer-bottom">
+        <div>© DataHacks — Prototipo Wireframe Académico (Normas APA 7.ª Ed.)</div>
+        <div>Navegación Interactiva: Clic en <strong>"Leer Caso Completo"</strong> para ir a <strong>V-03</strong></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

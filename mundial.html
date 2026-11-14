@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V-04: Wireframe Archivo y Simulador Mundial 2026 — DataHacks</title>
+  <link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+
+  <!-- Barra de Control del Prototipo Académico -->
+  <aside class="wf-indicator-bar" aria-label="Controles del Prototipo">
+    <span>[PROTOTIPO WIREFRAME DATAHACKS] — <strong>V-04: Archivo Mundial 2026</strong> (48 Selecciones / 12 Grupos)</span>
+    <span>Vistas interactivas: 
+      <a href="index.html">V-01: Inicio</a> | 
+      <a href="casos-estudio.html">V-02: Casos</a> | 
+      <a href="arquetipos-futbol-real-madrid.html">V-03: Detalle</a> | 
+      <a href="mundial.html" style="font-weight:bold;text-decoration:underline;">V-04: Mundial</a> | 
+      <a href="algoritmo.html">V-05: Algoritmo</a>
+    </span>
+  </aside>
+
+  <!-- Barra de Navegación Superior Persistente -->
+  <header class="wf-navbar">
+    <div class="wf-container">
+      <div class="wf-nav-inner">
+        <a href="index.html" class="wf-brand">
+          <span class="wf-brand-badge">LOGOTIPO [DATAHACKS]</span>
+        </a>
+        <nav aria-label="Menú principal">
+          <ul class="wf-nav-links">
+            <li><a href="index.html" class="wf-nav-link">Inicio / Blog</a></li>
+            <li><a href="casos-estudio.html" class="wf-nav-link">Casos de Estudio</a></li>
+            <li><a href="mundial.html" class="wf-nav-link active">Mundial 2026</a></li>
+            <li><a href="algoritmo.html" class="wf-nav-link">Pipeline Algorítmico</a></li>
+            <li><a href="arquetipos-futbol-real-madrid.html" class="wf-nav-link">Artículo Destacado</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="index.html" class="wf-btn wf-btn-secondary">← Volver al Inicio</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Banner Informativo del Torneo -->
+    <section style="padding: 40px 0 24px; background-color: var(--wf-surface); border-bottom: 1px solid var(--wf-border);">
+      <div class="wf-container">
+        <!-- Breadcrumbs -->
+        <div class="wf-breadcrumbs">
+          <a href="index.html">Inicio (V-01)</a>
+          <span>›</span>
+          <span style="color: var(--wf-text-title); font-weight: 600;">Archivo Mundial 2026 (V-04)</span>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap;">
+          <div>
+            <span class="wf-badge wf-badge-interactive" style="margin-bottom: 8px;">FIFA World Cup 2026 Analytics Hub</span>
+            <h1 class="wf-h1">Archivo Estadístico y Simulador Predictivo: Mundial 2026</h1>
+            <p class="wf-lead" style="max-width: 800px; margin-bottom: 0;">
+              Plataforma de modelado cuantitativo de los 104 encuentros de la Copa del Mundo. Algoritmos de Monte Carlo basados en Poisson bivariado y métricas avanzadas de xG por selección.
+            </p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <a href="index.html" class="wf-btn wf-btn-primary">Ver Portada General</a>
+          </div>
+        </div>
+
+        <!-- Pestañas de Acceso Rápido del Módulo Deportivo -->
+        <div style="display: flex; gap: 12px; margin-top: 24px; border-bottom: 1px solid var(--wf-border); padding-bottom: 12px;">
+          <a href="mundial.html" class="wf-btn wf-btn-primary" style="min-height: 36px; padding: 6px 14px; font-size: 13px;">Resumen de Grupos (A - L)</a>
+          <a href="mundial.html" class="wf-btn wf-btn-neutral" style="min-height: 36px; padding: 6px 14px; font-size: 13px;">Simulador de Llaves (Playoffs)</a>
+          <a href="mundial.html" class="wf-btn wf-btn-neutral" style="min-height: 36px; padding: 6px 14px; font-size: 13px;">Mapas de Tiros & xG</a>
+          <a href="mundial.html" class="wf-btn wf-btn-neutral" style="min-height: 36px; padding: 6px 14px; font-size: 13px;">Redes de Pases</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resumen de 48 Selecciones en 12 Grupos (Grid) -->
+    <section style="padding: 36px 0;">
+      <div class="wf-container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <h2 class="wf-h2" style="margin-bottom: 0;">Estructura del Torneo: 12 Grupos Clasificatorios</h2>
+          <span style="font-size: 12px; color: var(--wf-text-muted);">48 Selecciones participantes | 104 Partidos</span>
+        </div>
+
+        <div class="wf-grid-4">
+          <!-- Grupo A -->
+          <div class="wf-card" style="padding: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--wf-border); padding-bottom: 8px;">
+              <strong style="color: var(--wf-text-title);">GRUPO A</strong>
+              <span class="wf-badge">Anfitrión: MEX</span>
+            </div>
+            <ul style="list-style: none; font-size: 12px;">
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>1. México</span> <span style="font-family: var(--wf-font-mono);">xG: 1.45</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>2. Sudáfrica</span> <span style="font-family: var(--wf-font-mono);">xG: 0.92</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>3. Polonia</span> <span style="font-family: var(--wf-font-mono);">xG: 1.28</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>4. Costa Rica</span> <span style="font-family: var(--wf-font-mono);">xG: 0.88</span></li>
+            </ul>
+            <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px; font-size: 12px; min-height: 32px; padding: 4px 8px;">Analizar Grupo A →</a>
+          </div>
+
+          <!-- Grupo B -->
+          <div class="wf-card" style="padding: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--wf-border); padding-bottom: 8px;">
+              <strong style="color: var(--wf-text-title);">GRUPO B</strong>
+              <span class="wf-badge">Anfitrión: CAN</span>
+            </div>
+            <ul style="list-style: none; font-size: 12px;">
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>1. Canadá</span> <span style="font-family: var(--wf-font-mono);">xG: 1.35</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>2. Suiza</span> <span style="font-family: var(--wf-font-mono);">xG: 1.42</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>3. Catar</span> <span style="font-family: var(--wf-font-mono);">xG: 0.74</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>4. Mali</span> <span style="font-family: var(--wf-font-mono);">xG: 0.95</span></li>
+            </ul>
+            <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px; font-size: 12px; min-height: 32px; padding: 4px 8px;">Analizar Grupo B →</a>
+          </div>
+
+          <!-- Grupo C -->
+          <div class="wf-card" style="padding: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--wf-border); padding-bottom: 8px;">
+              <strong style="color: var(--wf-text-title);">GRUPO C</strong>
+              <span class="wf-badge">Anfitrión: USA</span>
+            </div>
+            <ul style="list-style: none; font-size: 12px;">
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>1. Estados Unidos</span> <span style="font-family: var(--wf-font-mono);">xG: 1.60</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>2. Marruecos</span> <span style="font-family: var(--wf-font-mono);">xG: 1.38</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>3. Escocia</span> <span style="font-family: var(--wf-font-mono);">xG: 1.10</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>4. Uzbekistán</span> <span style="font-family: var(--wf-font-mono);">xG: 0.81</span></li>
+            </ul>
+            <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px; font-size: 12px; min-height: 32px; padding: 4px 8px;">Analizar Grupo C →</a>
+          </div>
+
+          <!-- Grupo D -->
+          <div class="wf-card" style="padding: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid var(--wf-border); padding-bottom: 8px;">
+              <strong style="color: var(--wf-text-title);">GRUPO D</strong>
+              <span class="wf-badge">CONMEBOL</span>
+            </div>
+            <ul style="list-style: none; font-size: 12px;">
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>1. Argentina</span> <span style="font-family: var(--wf-font-mono);">xG: 2.15</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>2. Dinamarca</span> <span style="font-family: var(--wf-font-mono);">xG: 1.48</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>3. Japón</span> <span style="font-family: var(--wf-font-mono);">xG: 1.34</span></li>
+              <li style="padding: 4px 0; display: flex; justify-content: space-between;"><span>4. Ghana</span> <span style="font-family: var(--wf-font-mono);">xG: 1.05</span></li>
+            </ul>
+            <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px; font-size: 12px; min-height: 32px; padding: 4px 8px;">Analizar Grupo D →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placeholder del Simulador Visual y Tabla Comparativa -->
+    <section style="padding: 16px 0 60px;">
+      <div class="wf-container">
+        
+        <!-- Placeholder de Bracket del Simulador -->
+        <div class="wf-card" style="margin-bottom: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <h3 class="wf-h3" style="margin-bottom: 0;">Simulador de Cuadro Eliminatorio (16avos a la Final)</h3>
+            <span class="wf-badge wf-badge-interactive">10,000 Simulaciones de Monte Carlo</span>
+          </div>
+          <div class="wf-placeholder" style="min-height: 280px;">
+            <div class="wf-placeholder-icon">🏆</div>
+            <div class="wf-placeholder-label">[Placeholder Wireframe: Árbol de Eliminación Directa Bracket Interactivo]</div>
+            <div class="wf-placeholder-dim">Dimensiones: 1100 x 280 px | Navegación de llaves por clic de nodo</div>
+          </div>
+        </div>
+
+        <!-- Tabla Resumen de Métricas Proyectadas -->
+        <div class="wf-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <h3 class="wf-h3" style="margin-bottom: 0;">Top 5 Selecciones Candidatas: Métricas Proyectadas</h3>
+            <a href="algoritmo.html" class="wf-btn wf-btn-secondary" style="min-height: 32px; padding: 4px 10px; font-size: 12px;">Ver Modelo Matemático →</a>
+          </div>
+          <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+            <thead>
+              <tr style="background-color: var(--wf-placeholder-bg); text-align: left;">
+                <th style="padding: 10px; border-bottom: 1px solid var(--wf-border);">Selección</th>
+                <th style="padding: 10px; border-bottom: 1px solid var(--wf-border);">Confederación</th>
+                <th style="padding: 10px; border-bottom: 1px solid var(--wf-border);">xG Promedio / 90</th>
+                <th style="padding: 10px; border-bottom: 1px solid var(--wf-border);">xGA (Goles Concedidos)</th>
+                <th style="padding: 10px; border-bottom: 1px solid var(--wf-border);">Probabilidad Campeón</th>
+                <th style="padding: 10px; border-bottom: 1px solid var(--wf-border);">Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700;">1. España</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);">UEFA</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">2.18</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">0.68</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700; color: var(--wf-accent);">18.4%</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);"><a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="min-height: 28px; padding: 2px 8px; font-size: 11px;">Ver Perfil →</a></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700;">2. Argentina</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);">CONMEBOL</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">2.15</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">0.72</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700; color: var(--wf-accent);">16.9%</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);"><a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="min-height: 28px; padding: 2px 8px; font-size: 11px;">Ver Perfil →</a></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700;">3. Francia</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);">UEFA</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">2.04</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">0.81</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700; color: var(--wf-accent);">14.2%</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);"><a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="min-height: 28px; padding: 2px 8px; font-size: 11px;">Ver Perfil →</a></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700;">4. Inglaterra</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);">UEFA</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">1.98</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">0.79</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700; color: var(--wf-accent);">12.5%</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);"><a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="min-height: 28px; padding: 2px 8px; font-size: 11px;">Ver Perfil →</a></td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700;">5. Brasil</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);">CONMEBOL</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">1.92</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-family: var(--wf-font-mono);">0.85</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border); font-weight: 700; color: var(--wf-accent);">11.1%</td>
+                <td style="padding: 10px; border-bottom: 1px solid var(--wf-border);"><a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="min-height: 28px; padding: 2px 8px; font-size: 11px;">Ver Perfil →</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Estructural -->
+  <footer class="wf-footer">
+    <div class="wf-container">
+      <div class="wf-footer-bottom">
+        <div>© DataHacks — Prototipo Wireframe Académico (Normas APA 7.ª Ed.)</div>
+        <div>Navegación: Selecciona cualquier fila o botón "Ver Perfil" para navegar a <strong>V-03</strong></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

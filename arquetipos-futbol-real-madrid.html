@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V-03: Wireframe Detalle de Caso de Estudio — DataHacks</title>
+  <link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+
+  <!-- Barra de Control del Prototipo Académico -->
+  <aside class="wf-indicator-bar" aria-label="Controles del Prototipo">
+    <span>[PROTOTIPO WIREFRAME DATAHACKS] — <strong>V-03: Detalle de Caso de Estudio</strong> (Lectura Analítica)</span>
+    <span>Vistas interactivas: 
+      <a href="index.html">V-01: Inicio</a> | 
+      <a href="casos-estudio.html">V-02: Casos</a> | 
+      <a href="arquetipos-futbol-real-madrid.html" style="font-weight:bold;text-decoration:underline;">V-03: Detalle</a> | 
+      <a href="mundial.html">V-04: Mundial</a> | 
+      <a href="algoritmo.html">V-05: Algoritmo</a>
+    </span>
+  </aside>
+
+  <!-- Barra de Navegación Superior Persistente -->
+  <header class="wf-navbar">
+    <div class="wf-container">
+      <div class="wf-nav-inner">
+        <a href="index.html" class="wf-brand">
+          <span class="wf-brand-badge">LOGOTIPO [DATAHACKS]</span>
+        </a>
+        <nav aria-label="Menú principal">
+          <ul class="wf-nav-links">
+            <li><a href="index.html" class="wf-nav-link">Inicio / Blog</a></li>
+            <li><a href="casos-estudio.html" class="wf-nav-link">Casos de Estudio</a></li>
+            <li><a href="mundial.html" class="wf-nav-link">Mundial 2026</a></li>
+            <li><a href="algoritmo.html" class="wf-nav-link">Pipeline Algorítmico</a></li>
+            <li><a href="arquetipos-futbol-real-madrid.html" class="wf-nav-link active">Artículo Destacado</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="casos-estudio.html" class="wf-btn wf-btn-secondary">← Volver al Catálogo (V-02)</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Encabezado de Artículo y Migas de Pan -->
+    <article style="padding: 40px 0 60px;">
+      <div class="wf-container" style="max-width: 860px;">
+        
+        <!-- Breadcrumbs Estructurales -->
+        <nav class="wf-breadcrumbs" aria-label="Miga de pan">
+          <a href="index.html">Inicio (V-01)</a>
+          <span>›</span>
+          <a href="casos-estudio.html">Casos de Estudio (V-02)</a>
+          <span>›</span>
+          <span style="color: var(--wf-text-title); font-weight: 600;">Arquetipos Real Madrid</span>
+        </nav>
+
+        <span class="wf-badge wf-badge-interactive" style="margin-bottom: 12px;">Paper Técnico / Analítica Deportiva</span>
+        <h1 class="wf-h1" style="font-size: 32px; line-height: 1.25; margin-bottom: 16px;">
+          Arquetipos de Rendimiento y Segmentación Táctica en el Fútbol Europeo: Estudio de Caso Real Madrid
+        </h1>
+
+        <!-- Metadatos de Publicación -->
+        <div style="display: flex; gap: 20px; align-items: center; padding: 12px 0; border-top: 1px solid var(--wf-border); border-bottom: 1px solid var(--wf-border); margin-bottom: 32px; font-size: 13px; color: var(--wf-text-muted);">
+          <div><strong>Autor:</strong> Esteban Estrada</div>
+          <div>•</div>
+          <div><strong>Fecha:</strong> Noviembre 2026</div>
+          <div>•</div>
+          <div><strong>Tiempo de Lectura:</strong> 15 minutos</div>
+          <div>•</div>
+          <div><strong>Dataset:</strong> Opta / StatsBomb Open Data</div>
+        </div>
+
+        <!-- Banner de Acción CTA (Google Colab Reproducible) -->
+        <div class="wf-card" style="background-color: var(--wf-accent-light); border-color: #BFDBFE; display: flex; justify-content: space-between; align-items: center; margin-bottom: 36px; padding: 16px 24px;">
+          <div>
+            <div style="font-weight: 700; color: var(--wf-text-title); font-size: 14px;">Reproducibilidad Científica del Modelo</div>
+            <div style="font-size: 12px; color: var(--wf-text-body);">Accede al notebook completo en Google Colab con código ejecutable en Python.</div>
+          </div>
+          <a href="https://colab.research.google.com" target="_blank" rel="noopener noreferrer" class="wf-btn wf-btn-primary" style="white-space: nowrap;">
+            Abrir en Google Colab ↗
+          </a>
+        </div>
+
+        <!-- Contenido Central del Artículo a 1 Columna -->
+        <section style="margin-bottom: 36px;">
+          <h2 class="wf-h2">1. Planteamiento del Problema y Justificación</h2>
+          <p class="wf-body">
+            En el fútbol profesional contemporáneo, la evaluación posicional tradicional (delantero, mediocampista, defensa) resulta insuficiente para describir la polivalencia táctica de los jugadores. La automatización del scouting exige modelos cuantitativos capaces de agrupar perfiles funcionales basándose estrictamente en eventos espaciales, pases progresivos y métricas de peligro esperado (xT).
+          </p>
+          <p class="wf-body">
+            Este estudio utiliza datos de eventos por 90 minutos para clasificar a los jugadores de la plantilla del Real Madrid dentro de arquetipos objetivos mediante la combinación de algoritmos no supervisados: Análisis de Componentes Principales (PCA) y K-Means Clustering.
+          </p>
+        </section>
+
+        <!-- Placeholder Gráfico 1: Radar de Rendimiento -->
+        <div style="margin-bottom: 36px;">
+          <div class="wf-placeholder" style="min-height: 380px;">
+            <div class="wf-placeholder-icon">🕸️</div>
+            <div class="wf-placeholder-label">[Placeholder Gráfico: Radar de Métricas Multivariadas por Posición]</div>
+            <div class="wf-placeholder-dim">Dimensiones: 800 x 380 px | 8 Ejes: xG, Pases Progresivos, Recuperaciones, Regates, etc.</div>
+          </div>
+          <div style="font-size: 12px; color: var(--wf-text-muted); text-align: center; margin-top: 8px;">
+            Figura explicativa del perfil táctico normalizado con respecto al percentil 50 de las 5 grandes ligas europeas.
+          </div>
+        </div>
+
+        <!-- Sección 2: Metodología -->
+        <section style="margin-bottom: 36px;">
+          <h2 class="wf-h2">2. Proceso Algorítmico y Estandarización</h2>
+          <p class="wf-body">
+            Para garantizar la validez del agrupamiento euclidiano, todas las variables numéricas fueron estandarizadas mediante Z-score. La reducción dimensional por PCA retuvo el 72.8% de la varianza total explicada en las dos primeras componentes principales (PC1: Capacidad Ofensiva/Creación; PC2: Intensidad Defensiva/Presión).
+          </p>
+          
+          <div class="wf-card" style="margin: 20px 0; background-color: var(--wf-canvas);">
+            <div style="font-family: var(--wf-font-mono); font-size: 13px; color: var(--wf-text-title);">
+              Z = (X - &mu;) / &sigma; &emsp; | &emsp; Componente Principal = &sum; w_i &times; Z_i
+            </div>
+            <div style="font-size: 12px; color: var(--wf-text-muted); margin-top: 6px;">
+              Fórmula de normalización Z-score y proyección factorial empleada en el pipeline.
+            </div>
+          </div>
+
+          <p class="wf-body">
+            Para consultar la formulación matemática paso a paso y la selección del número óptimo de clusters (k), revisa la vista dedicada de metodología:
+          </p>
+          <div>
+            <a href="algoritmo.html" class="wf-btn wf-btn-secondary">Explorar Pipeline Algorítmico Completo (V-05) →</a>
+          </div>
+        </section>
+
+        <!-- Placeholder Gráfico 2: Biplot de Clusters K-Means -->
+        <div style="margin-bottom: 40px;">
+          <div class="wf-placeholder" style="min-height: 400px;">
+            <div class="wf-placeholder-icon">📍</div>
+            <div class="wf-placeholder-label">[Placeholder Gráfico: Dispersión 2D K-Means Biplot con Centroides]</div>
+            <div class="wf-placeholder-dim">Dimensiones: 800 x 400 px | Clústeres: C1 (Constructores), C2 (Destructores), C3 (Finalizadores)</div>
+          </div>
+          <div style="font-size: 12px; color: var(--wf-text-muted); text-align: center; margin-top: 8px;">
+            Distribución espacial de los jugadores del Real Madrid proyectados sobre las dos primeras componentes principales.
+          </div>
+        </div>
+
+        <!-- Tabla Resumen de Métricas -->
+        <section style="margin-bottom: 40px;">
+          <h3 class="wf-h3">3. Resumen de Clústeres Asignados</h3>
+          <table style="width: 100%; border-collapse: collapse; font-size: 13px; background-color: var(--wf-surface); border: 1px solid var(--wf-border); border-radius: var(--wf-radius); overflow: hidden;">
+            <thead>
+              <tr style="background-color: var(--wf-placeholder-bg); text-align: left;">
+                <th style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Clúster</th>
+                <th style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Denominación Táctica</th>
+                <th style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Ejemplos Plantilla</th>
+                <th style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Métrica Dominante</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border); font-weight: 700;">K = 1</td>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Generadores de Alto Volumen</td>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Luka Modrić, Jude Bellingham</td>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Pases Progresivos / xA</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border); font-weight: 700;">K = 2</td>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Extremos Disruptivos 1v1</td>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Vinícius Júnior, Rodrygo</td>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Regates Exitosos / Conducciones</td>
+              </tr>
+              <tr>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border); font-weight: 700;">K = 3</td>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Anclas Defensivas y Cobertura</td>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Aurélien Tchouaméni, Valverde</td>
+                <td style="padding: 12px; border-bottom: 1px solid var(--wf-border);">Recuperaciones / Duelos Aéreos</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Bloque de Navegación Final del Artículo -->
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 24px; border-top: 1px solid var(--wf-border);">
+          <a href="casos-estudio.html" class="wf-btn wf-btn-secondary">← Volver al Catálogo de Casos (V-02)</a>
+          <a href="mundial.html" class="wf-btn wf-btn-primary">Ir a Archivo Mundial 2026 (V-04) →</a>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer Estructural -->
+  <footer class="wf-footer">
+    <div class="wf-container">
+      <div class="wf-footer-bottom">
+        <div>© DataHacks — Prototipo Wireframe Académico (Normas APA 7.ª Ed.)</div>
+        <div>Navegación de retorno: Breadcrumb superior o botón "Volver al Catálogo"</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

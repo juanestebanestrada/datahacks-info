@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V-01: Wireframe Inicio / Blog Principal — DataHacks</title>
+  <link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+
+  <!-- Barra de Control del Prototipo Académico -->
+  <aside class="wf-indicator-bar" aria-label="Controles del Prototipo">
+    <span>[PROTOTIPO WIREFRAME DATAHACKS] — <strong>V-01: Inicio / Blog Principal</strong> (1440x1024px Grid 12 col)</span>
+    <span>Vistas interactivas: 
+      <a href="index.html" style="font-weight:bold;text-decoration:underline;">V-01: Inicio</a> | 
+      <a href="casos-estudio.html">V-02: Casos</a> | 
+      <a href="arquetipos-futbol-real-madrid.html">V-03: Detalle</a> | 
+      <a href="mundial.html">V-04: Mundial</a> | 
+      <a href="algoritmo.html">V-05: Algoritmo</a>
+    </span>
+  </aside>
+
+  <!-- Barra de Navegación Superior Persistente -->
+  <header class="wf-navbar">
+    <div class="wf-container">
+      <div class="wf-nav-inner">
+        <a href="index.html" class="wf-brand">
+          <span class="wf-brand-badge">LOGOTIPO [DATAHACKS]</span>
+        </a>
+        <nav aria-label="Menú principal">
+          <ul class="wf-nav-links">
+            <li><a href="index.html" class="wf-nav-link active">Inicio / Blog</a></li>
+            <li><a href="casos-estudio.html" class="wf-nav-link">Casos de Estudio</a></li>
+            <li><a href="mundial.html" class="wf-nav-link">Mundial 2026</a></li>
+            <li><a href="algoritmo.html" class="wf-nav-link">Pipeline Algorítmico</a></li>
+            <li><a href="arquetipos-futbol-real-madrid.html" class="wf-nav-link">Artículo Destacado</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="casos-estudio.html" class="wf-btn wf-btn-primary">Explorar Catálogo →</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Hero (Layout en Z) -->
+    <section style="padding: 60px 0 40px; border-bottom: 1px solid var(--wf-border); background-color: var(--wf-surface);">
+      <div class="wf-container" style="text-align: center; max-width: 900px;">
+        <span class="wf-badge" style="margin-bottom: 16px;">Plataforma de Analítica & Modelado Predictivo</span>
+        <h1 class="wf-h1">Ciencia de Datos Aplicada y Analítica Avanzada para Decisiones Estratégicas</h1>
+        <p class="wf-lead">
+          Centralización de pipelines matemáticos y visualización de modelos estadísticos complejos (clustering, PCA y proyecciones de rendimiento) en interfaces interactivas para investigación y toma de decisiones.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="casos-estudio.html" class="wf-btn wf-btn-primary">Ver Casos de Estudio (V-02)</a>
+          <a href="mundial.html" class="wf-btn wf-btn-secondary">Explorar Mundial 2026 (V-04)</a>
+          <a href="algoritmo.html" class="wf-btn wf-btn-neutral">Metodología Algorítmica (V-05)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tira de KPIs Resumen (4 Métricas Clave) -->
+    <section style="padding: 32px 0;">
+      <div class="wf-container">
+        <div class="wf-grid-4">
+          <div class="wf-card" style="text-align: center;">
+            <div style="font-size: 28px; font-weight: 800; color: var(--wf-accent); font-family: var(--wf-font-mono);">+1.2M</div>
+            <div style="font-size: 13px; font-weight: 600; color: var(--wf-text-title); margin-top: 4px;">Puntos de Datos Procesados</div>
+            <div style="font-size: 11px; color: var(--wf-text-muted);">Event data Opta & StatsBomb</div>
+          </div>
+          <div class="wf-card" style="text-align: center;">
+            <div style="font-size: 28px; font-weight: 800; color: var(--wf-accent); font-family: var(--wf-font-mono);">100%</div>
+            <div style="font-size: 13px; font-weight: 600; color: var(--wf-text-title); margin-top: 4px;">Notebooks Reproducibles</div>
+            <div style="font-size: 11px; color: var(--wf-text-muted);">Google Colab abierto</div>
+          </div>
+          <div class="wf-card" style="text-align: center;">
+            <div style="font-size: 28px; font-weight: 800; color: var(--wf-accent); font-family: var(--wf-font-mono);">48</div>
+            <div style="font-size: 13px; font-weight: 600; color: var(--wf-text-title); margin-top: 4px;">Selecciones Modeladas</div>
+            <div style="font-size: 11px; color: var(--wf-text-muted);">Mundial FIFA 2026</div>
+          </div>
+          <div class="wf-card" style="text-align: center;">
+            <div style="font-size: 28px; font-weight: 800; color: var(--wf-accent); font-family: var(--wf-font-mono);">4</div>
+            <div style="font-size: 13px; font-weight: 600; color: var(--wf-text-title); margin-top: 4px;">Sectores Industriales</div>
+            <div style="font-size: 11px; color: var(--wf-text-muted);">Deportes, Telco, Real Estate, Urbano</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloque Destacado Dividido (Investigación Principal) -->
+    <section style="padding: 16px 0 40px;">
+      <div class="wf-container">
+        <div class="wf-card" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center;">
+          <div>
+            <span class="wf-badge wf-badge-interactive" style="margin-bottom: 12px;">Caso de Estudio Principal</span>
+            <h2 class="wf-h2">Identificación de Arquetipos de Rendimiento Deportivo Mediante K-Means y PCA</h2>
+            <p class="wf-body">
+              Análisis cuantitativo de más de 45 variables de rendimiento en fútbol europeo de élite. Reducción de dimensionalidad y segmentación no supervisada para clasificación de perfiles posicionales tácticos.
+            </p>
+            <div style="display: flex; gap: 12px; margin-top: 20px;">
+              <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-primary">Leer Caso Completo (V-03) →</a>
+              <a href="algoritmo.html" class="wf-btn wf-btn-secondary">Ver Pipeline Matemático</a>
+            </div>
+          </div>
+          <div>
+            <div class="wf-placeholder" style="min-height: 260px;">
+              <div class="wf-placeholder-icon">📊</div>
+              <div class="wf-placeholder-label">[Placeholder Gráfico: Dispersión Biplot PCA 2D]</div>
+              <div class="wf-placeholder-dim">Dimensiones: 550 x 260 px | Varianza explicada: 68.4%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuadrícula 3x3 de Investigaciones y Artículos -->
+    <section style="padding: 24px 0 60px;">
+      <div class="wf-container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px;">
+          <div>
+            <h2 class="wf-h2" style="margin-bottom: 4px;">Publicaciones Recientes e Investigaciones</h2>
+            <p class="wf-body" style="margin-bottom: 0;">Artículos técnicos aplicados con código fuente y datasets disponibles.</p>
+          </div>
+          <a href="casos-estudio.html" class="wf-btn wf-btn-secondary">Ver Catálogo Completo (V-02) →</a>
+        </div>
+
+        <div class="wf-grid-3">
+          <!-- Tarjeta 1 -->
+          <article class="wf-card">
+            <div class="wf-placeholder" style="min-height: 140px; margin-bottom: 16px;">
+              <div class="wf-placeholder-label">[Thumbnail: Gráfico Radar Táctico]</div>
+              <div class="wf-placeholder-dim">340 x 140 px</div>
+            </div>
+            <span class="wf-badge" style="margin-bottom: 8px;">Deportes / Fútbol</span>
+            <h3 class="wf-h3">Arquetipos Tácticos: Real Madrid y Liga Española</h3>
+            <p class="wf-body" style="font-size: 13px;">Clustering de jugadores según perfil de creación, presión y finalización.</p>
+            <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px;">Acceder al Detalle →</a>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="wf-card">
+            <div class="wf-placeholder" style="min-height: 140px; margin-bottom: 16px;">
+              <div class="wf-placeholder-label">[Thumbnail: Curvas ROC Churn Telco]</div>
+              <div class="wf-placeholder-dim">340 x 140 px</div>
+            </div>
+            <span class="wf-badge" style="margin-bottom: 8px;">Telecomunicaciones</span>
+            <h3 class="wf-h3">Modelado Predictivo de Cancelación (Churn)</h3>
+            <p class="wf-body" style="font-size: 13px;">Comparativa entre XGBoost, Random Forest y Regresión Logística.</p>
+            <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px;">Acceder al Detalle →</a>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="wf-card">
+            <div class="wf-placeholder" style="min-height: 140px; margin-bottom: 16px;">
+              <div class="wf-placeholder-label">[Thumbnail: Mapa de Calor Inmobiliario]</div>
+              <div class="wf-placeholder-dim">340 x 140 px</div>
+            </div>
+            <span class="wf-badge" style="margin-bottom: 8px;">Sector Inmobiliario</span>
+            <h3 class="wf-h3">Valuación Hedónica de Vivienda Urbana</h3>
+            <p class="wf-body" style="font-size: 13px;">Modelos de regresión espacial multivariada para tasación automática de inmuebles.</p>
+            <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px;">Acceder al Detalle →</a>
+          </article>
+
+          <!-- Tarjeta 4 -->
+          <article class="wf-card">
+            <div class="wf-placeholder" style="min-height: 140px; margin-bottom: 16px;">
+              <div class="wf-placeholder-label">[Thumbnail: Simulación de Monte Carlo 48 Equipos]</div>
+              <div class="wf-placeholder-dim">340 x 140 px</div>
+            </div>
+            <span class="wf-badge" style="margin-bottom: 8px;">Mundial 2026</span>
+            <h3 class="wf-h3">Simulador Probabilístico de Fase de Grupos</h3>
+            <p class="wf-body" style="font-size: 13px;">Proyección de probabilidades de clasificación para los 12 grupos de la Copa del Mundo.</p>
+            <a href="mundial.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px;">Ver Simulador (V-04) →</a>
+          </article>
+
+          <!-- Tarjeta 5 -->
+          <article class="wf-card">
+            <div class="wf-placeholder" style="min-height: 140px; margin-bottom: 16px;">
+              <div class="wf-placeholder-label">[Thumbnail: Heatmap Densidad Delictiva]</div>
+              <div class="wf-placeholder-dim">340 x 140 px</div>
+            </div>
+            <span class="wf-badge" style="margin-bottom: 8px;">Seguridad Urbana</span>
+            <h3 class="wf-h3">Análisis Espacio-Temporal de Incidentes Urbanos</h3>
+            <p class="wf-body" style="font-size: 13px;">Identificación de puntos calientes mediante algoritmos DBSCAN y KDE.</p>
+            <a href="arquetipos-futbol-real-madrid.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px;">Acceder al Detalle →</a>
+          </article>
+
+          <!-- Tarjeta 6 -->
+          <article class="wf-card">
+            <div class="wf-placeholder" style="min-height: 140px; margin-bottom: 16px;">
+              <div class="wf-placeholder-label">[Thumbnail: Diagrama Flujo Algorítmico]</div>
+              <div class="wf-placeholder-dim">340 x 140 px</div>
+            </div>
+            <span class="wf-badge" style="margin-bottom: 8px;">Metodología</span>
+            <h3 class="wf-h3">Pipeline Matemático y Validación Cruzada</h3>
+            <p class="wf-body" style="font-size: 13px;">Estandarización Z-score, selección de hiperparámetros k óptimos y métrica silhouette.</p>
+            <a href="algoritmo.html" class="wf-btn wf-btn-secondary" style="width: 100%; margin-top: 12px;">Ver Pipeline (V-05) →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Estructural -->
+  <footer class="wf-footer">
+    <div class="wf-container">
+      <div class="wf-footer-cols">
+        <div class="wf-footer-col">
+          <span class="wf-brand-badge" style="margin-bottom: 12px; display: inline-block;">DATAHACKS — WIREFRAME PROTOTYPE</span>
+          <p class="wf-body" style="font-size: 12px;">
+            Plataforma académica y profesional para la automatización, modelado y visualización de ciencia de datos y analítica deportiva.
+          </p>
+        </div>
+        <div class="wf-footer-col">
+          <h4>Vistas del Prototipo</h4>
+          <ul>
+            <li><a href="index.html">V-01: Inicio</a></li>
+            <li><a href="casos-estudio.html">V-02: Casos de Estudio</a></li>
+            <li><a href="arquetipos-futbol-real-madrid.html">V-03: Detalle de Caso</a></li>
+            <li><a href="mundial.html">V-04: Mundial 2026</a></li>
+            <li><a href="algoritmo.html">V-05: Metodología</a></li>
+          </ul>
+        </div>
+        <div class="wf-footer-col">
+          <h4>Sectores Analizados</h4>
+          <ul>
+            <li><a href="casos-estudio.html">Analítica Deportiva</a></li>
+            <li><a href="casos-estudio.html">Telecomunicaciones (Churn)</a></li>
+            <li><a href="casos-estudio.html">Modelado Inmobiliario</a></li>
+            <li><a href="casos-estudio.html">Seguridad Urbana</a></li>
+          </ul>
+        </div>
+        <div class="wf-footer-col">
+          <h4>Documentación</h4>
+          <ul>
+            <li><a href="algoritmo.html">Pipeline Matemático</a></li>
+            <li><a href="arquetipos-futbol-real-madrid.html">Google Colab Notebooks</a></li>
+            <li><a href="index.html">Glosario de Métricas</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wf-footer-bottom">
+        <div>© DataHacks — Prototipo Wireframe Académico (Normas APA 7.ª Ed.)</div>
+        <div>Diseñado para Figma & Navegación de Bajo Nivel</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

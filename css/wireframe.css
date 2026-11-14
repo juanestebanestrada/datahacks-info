@@ -1,0 +1,396 @@
+/* ==========================================================================
+   DATAHACKS WIREFRAME SYSTEM - CSS DE BAJA/MEDIA FIDELIDAD
+   Cumplimiento de Especificaciones de Interacción y Rúbrica Académica
+   ========================================================================== */
+
+:root {
+  /* Paleta Funcional Wireframe (Escala de Grises Monocromática) */
+  --wf-canvas: #F3F4F6;         /* Gris muy claro de fondo del lienzo */
+  --wf-surface: #FFFFFF;        /* Superficie blanca para tarjetas y paneles */
+  --wf-border: #D1D5DB;         /* Borde delimitador estructural neutro */
+  --wf-border-strong: #9CA3AF;  /* Borde más marcado para separadores */
+  --wf-placeholder-bg: #E5E7EB; /* Gris medio para cajas de imagen/gráfico */
+  
+  /* Jerarquía Tipográfica Monocromática */
+  --wf-text-title: #111827;     /* Negro carbón para encabezados H1-H3 */
+  --wf-text-body: #4B5563;      /* Gris medio para párrafos y metadatos */
+  --wf-text-muted: #6B7280;     /* Gris tenue para badges y captions */
+
+  /* Color Único de Acento Interactivo (Affordance de Bajo Nivel) */
+  --wf-accent: #2563EB;         /* Azul técnico institucional para elementos clicables */
+  --wf-accent-hover: #1D4ED8;   /* Azul oscuro para estado activo/hover */
+  --wf-accent-light: #EFF6FF;   /* Azul muy pálido para badges interactivos */
+
+  /* Tipografía Estándar */
+  --wf-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --wf-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+  /* Espaciados y Retícula */
+  --wf-container-max: 1200px;
+  --wf-radius: 6px;
+  --wf-gap: 24px;
+}
+
+/* Reseteo y Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--wf-canvas);
+  color: var(--wf-text-body);
+  font-family: var(--wf-font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Contenedor Principal Centrado (1200px máx.) */
+.wf-container {
+  width: 100%;
+  max-width: var(--wf-container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Barra de Navegación Superior Persistente (Wireframe Header) */
+.wf-navbar {
+  background-color: var(--wf-surface);
+  border-bottom: 2px solid var(--wf-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 0;
+}
+
+.wf-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.wf-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--wf-text-title);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.wf-brand-badge {
+  background-color: var(--wf-placeholder-bg);
+  border: 1px dashed var(--wf-border-strong);
+  padding: 6px 10px;
+  font-size: 12px;
+  font-family: var(--wf-font-mono);
+  font-weight: 700;
+  color: var(--wf-text-title);
+  border-radius: var(--wf-radius);
+}
+
+.wf-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+.wf-nav-link {
+  text-decoration: none;
+  color: var(--wf-text-title);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: var(--wf-radius);
+  transition: all 0.15s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.wf-nav-link:hover {
+  color: var(--wf-accent);
+}
+
+.wf-nav-link.active {
+  color: var(--wf-accent);
+  background-color: var(--wf-accent-light);
+  border-bottom: 2px solid var(--wf-accent);
+}
+
+/* Botones CTA (Ley de Fitts: min-height 40px, affordance azul) */
+.wf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  min-height: 40px;
+  font-family: var(--wf-font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--wf-radius);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  border: 1px solid transparent;
+}
+
+.wf-btn-primary {
+  background-color: var(--wf-accent);
+  color: #FFFFFF;
+}
+
+.wf-btn-primary:hover {
+  background-color: var(--wf-accent-hover);
+}
+
+.wf-btn-secondary {
+  background-color: var(--wf-surface);
+  color: var(--wf-accent);
+  border: 1px solid var(--wf-accent);
+}
+
+.wf-btn-secondary:hover {
+  background-color: var(--wf-accent-light);
+}
+
+.wf-btn-neutral {
+  background-color: var(--wf-placeholder-bg);
+  color: var(--wf-text-title);
+  border: 1px solid var(--wf-border-strong);
+}
+
+.wf-btn-neutral:hover {
+  background-color: #D1D5DB;
+}
+
+/* Tarjetas y Contenedores */
+.wf-card {
+  background-color: var(--wf-surface);
+  border: 1px solid var(--wf-border);
+  border-radius: var(--wf-radius);
+  padding: 24px;
+}
+
+/* Tipografía */
+h1.wf-h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--wf-text-title);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+h2.wf-h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--wf-text-title);
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+h3.wf-h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--wf-text-title);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+p.wf-lead {
+  font-size: 16px;
+  color: var(--wf-text-body);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+p.wf-body {
+  font-size: 14px;
+  color: var(--wf-text-body);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Placeholders para Gráficos, Mapas y Visualizaciones */
+.wf-placeholder {
+  background-color: var(--wf-placeholder-bg);
+  border: 1px dashed var(--wf-border-strong);
+  border-radius: var(--wf-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  min-height: 200px;
+  color: var(--wf-text-muted);
+}
+
+.wf-placeholder-icon {
+  width: 48px;
+  height: 48px;
+  border: 2px dashed var(--wf-border-strong);
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--wf-text-muted);
+}
+
+.wf-placeholder-label {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--wf-text-title);
+  margin-bottom: 4px;
+}
+
+.wf-placeholder-dim {
+  font-family: var(--wf-font-mono);
+  font-size: 11px;
+  color: var(--wf-text-muted);
+}
+
+/* Badges y Metadatos */
+.wf-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: var(--wf-placeholder-bg);
+  color: var(--wf-text-title);
+  border-radius: 4px;
+  border: 1px solid var(--wf-border);
+}
+
+.wf-badge-interactive {
+  background-color: var(--wf-accent-light);
+  color: var(--wf-accent);
+  border-color: #BFDBFE;
+}
+
+/* Sistema de Rejilla (Grid de 12 Columnas y Helpers) */
+.wf-grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--wf-gap);
+}
+
+.wf-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--wf-gap);
+}
+
+.wf-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--wf-gap);
+}
+
+.wf-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--wf-gap);
+}
+
+@media (max-width: 900px) {
+  .wf-grid-3, .wf-grid-4, .wf-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Breadcrumbs (Navegación de Retorno) */
+.wf-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--wf-text-muted);
+  margin-bottom: 16px;
+}
+
+.wf-breadcrumbs a {
+  color: var(--wf-accent);
+  text-decoration: none;
+}
+
+.wf-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* Footer del Wireframe */
+.wf-footer {
+  background-color: var(--wf-surface);
+  border-top: 1px solid var(--wf-border);
+  padding: 40px 0 24px;
+  margin-top: 60px;
+}
+
+.wf-footer-cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.wf-footer-col h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--wf-text-title);
+  margin-bottom: 12px;
+}
+
+.wf-footer-col ul {
+  list-style: none;
+}
+
+.wf-footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.wf-footer-col ul li a {
+  color: var(--wf-text-body);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.wf-footer-col ul li a:hover {
+  color: var(--wf-accent);
+}
+
+.wf-footer-bottom {
+  border-top: 1px solid var(--wf-border);
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--wf-text-muted);
+}
+
+/* Marcador flotante de modo Wireframe */
+.wf-indicator-bar {
+  background-color: #111827;
+  color: #FFFFFF;
+  padding: 6px 16px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--wf-font-mono);
+}
+
+.wf-indicator-bar a {
+  color: #93C5FD;
+  text-decoration: none;
+  margin-left: 8px;
+}
